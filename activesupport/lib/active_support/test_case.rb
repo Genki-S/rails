@@ -1,4 +1,5 @@
 gem 'minitest' # make sure we get the gem, not stdlib
+require 'coverage'
 require 'minitest'
 require 'active_support/testing/tagged_logging'
 require 'active_support/testing/setup_and_teardown'
@@ -14,6 +15,20 @@ require 'active_support/core_ext/kernel/reporting'
 module ActiveSupport
   class TestCase < ::Minitest::Test
     Assertion = Minitest::Assertion
+
+    def setup
+      saved_loaded_features = $"
+      $".delete_if { true }
+      Coverage.start
+      saved_loaded_features.each do |feature|
+        require feature
+      end
+      super
+    end
+
+    def teardown
+      p Coverage.result
+    end
 
     class << self
       # Sets the order in which test cases are run.
