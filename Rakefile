@@ -16,7 +16,7 @@ PROJECTS = %w(activesupport activemodel actionpack actionview actionmailer activ
 desc 'Run all tests by default'
 task :default => %w(test test:isolated)
 
-%w(test test:isolated package gem).each do |task_name|
+%w(test test:isolated package gem ttnt:anchor).each do |task_name|
   desc "Run #{task_name} task for all projects"
   task task_name do
     errors = []
