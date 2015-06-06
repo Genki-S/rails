@@ -13,21 +13,21 @@ GIT
 
 GIT
   remote: git://github.com/mikel/mail.git
-  revision: b159e0a542962fdd5e292a48cfffa560d7cf412e
+  revision: 6a8be76c12ecf7496ed1f40bda5c771578ad1a0b
   specs:
     mail (2.6.3.edge)
       mime-types (>= 1.16, < 3)
 
 GIT
   remote: git://github.com/rails/arel.git
-  revision: aac9da257f291ad8d2d4f914528881c240848bb2
+  revision: 7442623100f5ecdd73fd8f68376431762380f4e5
   branch: master
   specs:
     arel (7.0.0.alpha)
 
 GIT
   remote: git://github.com/rails/jquery-rails.git
-  revision: 272abdd319bb3381b23182b928b25320590096b0
+  revision: f0d5bf74a11e17dba5309eabb03f155df4b655ce
   branch: master
   specs:
     jquery-rails (4.0.3)
@@ -95,12 +95,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     amq-protocol (1.9.2)
-    backburner (0.4.6)
-      beaneater (~> 0.3.1)
-      dante (~> 0.1.5)
+    backburner (1.0.0)
+      beaneater (~> 1.0)
+      dante (> 0.1.5)
     bcrypt (3.1.10)
-    beaneater (0.3.3)
-    benchmark-ips (2.1.1)
+    beaneater (1.0.0)
+    benchmark-ips (2.2.0)
     builder (3.2.2)
     bunny (1.1.9)
       amq-protocol (>= 1.9.2)
@@ -109,52 +109,51 @@ GEM
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
-    coffee-script (2.3.0)
+    coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.0)
-    connection_pool (2.1.1)
-    dalli (2.7.2)
-    dante (0.1.5)
+    coffee-script-source (1.9.1.1)
+    connection_pool (2.2.0)
+    dalli (2.7.4)
+    dante (0.2.0)
     delayed_job (4.0.6)
       activesupport (>= 3.0, < 5.0)
     delayed_job_active_record (4.0.3)
       activerecord (>= 3.0, < 5.0)
       delayed_job (>= 3.0, < 4.1)
     erubis (2.7.0)
-    execjs (2.3.0)
-    globalid (0.3.3)
+    execjs (2.5.2)
+    globalid (0.3.5)
       activesupport (>= 4.1.0)
-    hike (1.2.3)
     hitimes (1.2.2)
     i18n (0.7.0)
-    json (1.8.2)
+    json (1.8.3)
     kindlerb (0.1.1)
       mustache
       nokogiri
-    loofah (2.0.1)
+    loofah (2.0.2)
       nokogiri (>= 1.5.9)
     metaclass (0.0.4)
     method_source (0.8.2)
-    mime-types (2.4.3)
+    mime-types (2.6.1)
     mini_portile (0.6.2)
     minitest (5.3.3)
     mocha (0.14.0)
       metaclass (~> 0.0.1)
     mono_logger (1.1.0)
-    multi_json (1.10.1)
-    mustache (1.0.0)
+    multi_json (1.11.0)
+    mustache (1.0.1)
     mysql (2.9.1)
     mysql2 (0.3.18)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
-    pg (0.18.1)
+    pg (0.18.2)
     psych (2.0.13)
-    que (0.9.2)
+    que (0.10.0)
     queue_classic (3.1.0)
       pg (>= 0.17, < 0.19)
     racc (1.4.12)
-    rack (1.6.0)
+    rack (1.6.1)
     rack-cache (1.2)
       rack (>= 0.4)
     rack-protection (1.5.3)
@@ -163,7 +162,7 @@ GEM
       rack (>= 1.0)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.5)
+    rails-dom-testing (1.0.6)
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
@@ -171,9 +170,9 @@ GEM
       loofah (~> 2.0)
     rake (10.4.2)
     rdoc (4.2.0)
-    redcarpet (3.2.2)
+    redcarpet (3.2.3)
     redis (3.2.1)
-    redis-namespace (1.5.1)
+    redis-namespace (1.5.2)
       redis (~> 3.0, >= 3.0.4)
     resque (1.25.2)
       mono_logger (~> 1.0)
@@ -187,54 +186,54 @@ GEM
       resque (~> 1.25)
       rufus-scheduler (~> 3.0)
     ruby-prof (0.11.3)
-    rufus-scheduler (3.0.9)
-      tzinfo
+    rufus-scheduler (3.1.2)
+    rugged (0.23.0b2)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    sequel (4.19.0)
+    sequel (4.23.0)
     serverengine (1.5.10)
       sigdump (~> 0.2.2)
-    sidekiq (3.3.2)
+    sidekiq (3.3.4)
       celluloid (>= 0.16.0)
       connection_pool (>= 2.1.1)
       json
       redis (>= 3.0.6)
       redis-namespace (>= 1.3.1)
-    sigdump (0.2.2)
-    sinatra (1.4.5)
+    sigdump (0.2.3)
+    sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
-      tilt (~> 1.3, >= 1.3.4)
+      tilt (>= 1.3, < 3)
     sneakers (0.1.1.pre)
       bunny (~> 1.1.3)
       serverengine
       thor
       thread
-    sprockets (2.12.3)
-      hike (~> 1.2)
-      multi_json (~> 1.0)
+    sprockets (3.2.0)
       rack (~> 1.0)
-      tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.2.4)
+    sprockets-rails (2.3.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
     sqlite3 (1.3.10)
     stackprof (0.2.7)
-    sucker_punch (1.3.2)
+    sucker_punch (1.5.0)
       celluloid (~> 0.16.0)
     thor (0.19.1)
-    thread (0.1.5)
-    thread_safe (0.3.4)
-    tilt (1.4.1)
+    thread (0.2.0)
+    thread_safe (0.3.5)
+    tilt (2.0.1)
     timers (4.0.1)
       hitimes
+    ttnt (0.0.2)
+      json (= 1.8.3)
+      rugged (= 0.23.0b2)
     turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.7.0)
+    uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     vegas (0.1.11)
@@ -288,6 +287,10 @@ DEPENDENCIES
   sqlite3 (~> 1.3.6)
   stackprof
   sucker_punch
+  ttnt (= 0.0.2)
   turbolinks
   uglifier (>= 1.3.0)
   w3c_validators
+
+BUNDLED WITH
+   1.10.2
