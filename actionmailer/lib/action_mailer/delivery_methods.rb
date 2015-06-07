@@ -41,7 +41,9 @@ module ActionMailer
     # Helpers for creating and wrapping delivery behavior, used by DeliveryMethods.
     module ClassMethods
       # Provides a list of emails that have been delivered by Mail::TestMailer
-      delegate :deliveries, :deliveries=, to: Mail::TestMailer
+      def deliveries
+        nil
+      end
 
       # Adds a new delivery method through the given class using the given
       # symbol as alias and the default options supplied.
